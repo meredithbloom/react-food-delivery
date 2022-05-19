@@ -7,7 +7,7 @@ import Card from './Card'
 
 const Backdrop = (props) => {
     return (
-        <div className={classes.backdrop}/>
+        <div className={classes.backdrop} onClick={props.onClose}/>
     )
 }
 
@@ -29,7 +29,7 @@ const Modal = (props) => {
     return (
         <>
             {ReactDOM.createPortal(
-                <Backdrop />,
+                <Backdrop onClose={props.onClose}/>,
                 portalElement
             )}
             {ReactDOM.createPortal(

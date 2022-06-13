@@ -79,22 +79,38 @@ const Checkout = props => {
         <form className={classes.form} onSubmit={confirmHandler}>
             <div className={nameControlClasses}>
                 <label htmlFor="name">Your Name</label>
-                <input type='text' id='name' ref={nameInputRef} />
+                <input
+                    type='text'
+                    id='name'
+                    ref={nameInputRef}
+                />
                 {!formInputsValidity.name && <p>Please enter a valid name.</p>}
             </div>
             <div className={streetControlClasses}>
                 <label htmlFor="street">Street</label>
-                <input type='text' id='street' ref={streetInputRef} />
+                <input
+                    type='text'
+                    id='street'
+                    ref={streetInputRef}
+                />
                 {!formInputsValidity.street && <p>Please enter a valid street.</p>}
             </div>
             <div className={postalCodeControlClasses}>
                 <label htmlFor="postal">Postal Code</label>
-                <input type='text' id='postal' ref={postalCodeInputRef} />
+                <input
+                    type='text'
+                    id='postal'
+                    ref={postalCodeInputRef}
+                />
                 {!formInputsValidity.postalCode && <p>Please enter a valid 5-digit postal code.</p>}
             </div>
             <div className={cityControlClasses}>
                 <label htmlFor="city">City</label>
-                <input type='text' id='city' ref={cityInputRef} />
+                <input
+                    type='text'
+                    id='city'
+                    ref={cityInputRef}
+                />
                 {!formInputsValidity.city && <p>Please enter a valid city.</p>}
             </div>
             <div className={classes.actions}>
